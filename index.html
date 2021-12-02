@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>OSCORP Industries©</h1>
+        
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active">Home</li>
+                <li>Oscorp Tower</li>
+                <li>Archives</li>
+                <li>Inquiries</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+
+
+        <section class="right">
+
+            <p class="title">What Happened To Oscorp?</p>
+            <p class="msg">
+                Oscorp has made their new style to be about helping the world in anyway its employees can. They now believe, after the Lizard incident, that everything works in order as it turns out and that their only goal is to aid the world's citizens.
+            
+
+            </p>
+            <button class="cta">Learn More</button>
+        </section>
+
+        <section class="middle">
+            <img src="http://www.unleashthefanboy.com/wp-content/uploads/2012/06/Oscorp-tower.jpg" alt="Langing image">
+            
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
